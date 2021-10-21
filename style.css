@@ -43,10 +43,12 @@
     transition: 2s;
 }
 .ex-5-square:hover {
+    margin: 0;
     height: 120px;
     width: 120px;
 }
 .ex-5-square:active {
+    margin: 40px;
     height: 20px;
     width: 20px;
 }
@@ -78,14 +80,31 @@
     filter: grayscale(80%) blur(5px);
     border-radius: 10px;
     width: 200px;
+    margin: 100px 150px;
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate 2s infinite linear;
 }
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
 
 .ex-11-icon {
     font-size: 60px;
+    
 }
+.ex-11-icon:hover {
+    animation: rotate 2s;
+} 
+@keyframes rotate {
+    0%   {transform: rotate(0deg);}
+    80% {transform: rotate(270deg);}
+    100% {transform: rotate(0deg);}
+
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
